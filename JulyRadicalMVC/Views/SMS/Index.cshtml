@@ -1,0 +1,55 @@
+﻿@model JulyRadicalMVC.Models.Student
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Student Form</h2>
+
+<form action="CreateStudent" method="post">
+    <div>
+        <table>
+            <tr>
+                <td>Id</td>
+                <td><input type="text" name="Id" /></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="Name" /></td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td><input type="text" name="Class" /></td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Save" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+
+<div>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Class</td>
+        </tr>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.Name</td>
+            <td>@Model.Class</td>
+        </tr>
+    </table>
+</div>
+
+
+
