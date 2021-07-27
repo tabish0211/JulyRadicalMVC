@@ -9,30 +9,25 @@ namespace JulyRadicalMVC.Controllers
 {
     public class SMSController : Controller
     {
+        private static List<Student> students = new List<Student>();
        // servername/SMS/Index
+        [Route("DPS/Home")]
         public ActionResult Index()
-        {
-            //response can be done in many ways
-            //return Content("Hello world");
-
-            Student obj = new Student();
-            obj.Id = 101;
-            obj.Name = "Rahul";
-            obj.Class = 1;
-
-            //return Json(obj, JsonRequestBehavior.AllowGet);
-
-            //return new EmptyResult();
-
-            //return new HttpUnauthorizedResult("Access is denied");
-
-            return View(obj);
+        {    
+            return View();
         }
 
+        public ActionResult ListView()
+        {
+           // ViewData["myMessage"] = "List of Student Records:";
+            ViewBag.myMessage = "List of Student Records:";
+            return View(students);
+        }
         public ActionResult CreateStudent(Student obj)
         {
-
-            return View();
+            students.Add(obj);
+            return RedirectToActionPermanent("Index", "SMS");
+          //  return RedirectToAction("Index");
         }
 	}
 }

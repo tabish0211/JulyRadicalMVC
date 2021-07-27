@@ -13,10 +13,17 @@ namespace JulyRadicalMVC
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapMvcAttributeRoutes(); 
+            //routes.MapRoute(
+            //    name: "Custom",
+            //    url: "DPS/Home",
+            //    defaults: new { controller = "SMS", action = "Index", id = UrlParameter.Optional }
+            //);
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "HOme", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

@@ -1,0 +1,31 @@
+﻿@model List<JulyRadicalMVC.Models.Student>
+
+@{
+    ViewBag.Title = "ListViw";
+}
+
+<h2>@ViewBag.myMessage</h2>
+
+<div>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Class</td>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Class</td>
+            </tr>
+
+
+        }
+
+    </table>
+</div>
+
+
