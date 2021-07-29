@@ -29,5 +29,7 @@ namespace JulyRadicalMVC.Controllers
             return RedirectToActionPermanent("Index", "SMS");
           //  return RedirectToAction("Index");
         }
-	}
+        
+    
+    }
 }

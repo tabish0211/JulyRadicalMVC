@@ -10,5 +10,7 @@ namespace JulyRadicalMVC.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public int Class { get; set; }
+
+        public Address address { get; set; }
     }
 }

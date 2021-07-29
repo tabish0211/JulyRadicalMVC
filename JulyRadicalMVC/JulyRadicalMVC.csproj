@@ -115,10 +115,15 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HtmlHelpersController.cs" />
+    <Compile Include="Controllers\SessiontestController.cs" />
     <Compile Include="Controllers\SMSController.cs" />
+    <Compile Include="Controllers\TempdatasampleController.cs" />
+    <Compile Include="Controllers\VMController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -156,6 +161,12 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\SMS\Index.cshtml" />
     <Content Include="Views\SMS\ListView.cshtml" />
+    <Content Include="Views\Tempdatasample\MyAction.cshtml" />
+    <Content Include="Views\Tempdatasample\SessionDemo.cshtml" />
+    <Content Include="Views\Tempdatasample\AnotherAction.cshtml" />
+    <Content Include="Views\Sessiontest\Index.cshtml" />
+    <Content Include="Views\VM\Index.cshtml" />
+    <Content Include="Views\HtmlHelpers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
