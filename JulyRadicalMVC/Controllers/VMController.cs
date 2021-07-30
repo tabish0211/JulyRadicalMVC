@@ -51,5 +51,17 @@ namespace JulyRadicalMVC.Controllers
 
             return View(students);
         }
+
+        [HandleError]
+        [HandleError(ExceptionType=typeof(NullReferenceException),View="~/Views/Shared/NullReferenceException.cshtml")]
+        public ActionResult MySample()
+        {
+            int a, b, c;
+            a = 10; b = 0;
+            c = a / b;
+            //string msg = null;
+            //ViewBag.MyData = msg.Length;
+            return Content("hello");//msg.Length.ToString());
+        }
 	}
 }

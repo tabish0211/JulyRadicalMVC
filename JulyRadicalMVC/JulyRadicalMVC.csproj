@@ -119,11 +119,13 @@
     <Compile Include="Controllers\SessiontestController.cs" />
     <Compile Include="Controllers\SMSController.cs" />
     <Compile Include="Controllers\TempdatasampleController.cs" />
+    <Compile Include="Controllers\ValidatorController.cs" />
     <Compile Include="Controllers\VMController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -167,6 +169,10 @@
     <Content Include="Views\Sessiontest\Index.cshtml" />
     <Content Include="Views\VM\Index.cshtml" />
     <Content Include="Views\HtmlHelpers\Index.cshtml" />
+    <Content Include="Views\Shared\NullReferenceException.cshtml" />
+    <Content Include="Views\Validator\Index.cshtml" />
+    <Content Include="Views\Shared\_MyReusableView.cshtml" />
+    <Content Include="Views\Validator\DemoPartilaView.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

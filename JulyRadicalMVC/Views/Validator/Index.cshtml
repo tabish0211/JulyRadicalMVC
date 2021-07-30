@@ -1,0 +1,27 @@
+﻿@model JulyRadicalMVC.Models.Book
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm("SaveBook", "Validator"))
+{
+<div>
+    <table>
+        <tr>
+            <td>
+                @Html.EditorFor(m => m.Name)
+            </td>
+            <td>
+                <input type="submit" value="save" />
+            </td>
+
+        </tr>
+        <tr>
+            @Html.ValidationMessageFor(m=>m.Name)
+        </tr>
+    </table>
+</div>
+
+}
