@@ -24,3 +24,9 @@ D:\Madiha\JulyRadicalMVC\JulyRadicalMVC\bin\Antlr3.Runtime.pdb
 D:\Madiha\JulyRadicalMVC\JulyRadicalMVC\obj\Debug\JulyRadicalMVC.dll
 D:\Madiha\JulyRadicalMVC\JulyRadicalMVC\obj\Debug\JulyRadicalMVC.pdb
 D:\Madiha\JulyRadicalMVC\JulyRadicalMVC\obj\Debug\JulyRadicalMVC.csprojResolveAssemblyReference.cache
+D:\Madiha\JulyRadicalMVC\JulyRadicalMVC\bin\EntityFramework.dll
+D:\Madiha\JulyRadicalMVC\JulyRadicalMVC\bin\EntityFramework.SqlServer.dll
+D:\Madiha\JulyRadicalMVC\JulyRadicalMVC\bin\EntityFramework.xml
+D:\Madiha\JulyRadicalMVC\JulyRadicalMVC\bin\EntityFramework.SqlServer.xml
+D:\Madiha\JulyRadicalMVC\JulyRadicalMVC\obj\Debug\JulyRadicalMVC.Migrations.createbooktbl.resources
+D:\Madiha\JulyRadicalMVC\JulyRadicalMVC\obj\Debug\JulyRadicalMVC.csproj.GenerateResource.Cache

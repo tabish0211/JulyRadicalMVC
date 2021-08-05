@@ -1,0 +1,66 @@
+﻿using JulyRadicalMVC.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace JulyRadicalMVC.Controllers
+{
+    public class BookManagerController : Controller
+    {
+        //
+        // GET: /BookManager/
+        public ActionResult Index()
+        {
+            
+            BookContext contxt = new BookContext();
+            var books=contxt.books.ToList();
+            contxt.Dispose();
+            
+            return View(books);
+        }
+
+        //
+        // GET: /BookManager/Details/5
+        public ActionResult Details(int id)
+        {
+            return View();
+        }
+
+        //
+        // GET: /BookManager/Create
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        public ActionResult AddRecord(Book obj)
+        {
+            BookContext contxt = new BookContext();
+            contxt.books.Add(obj);
+            contxt.SaveChanges();
+            contxt.Dispose();
+            return RedirectToAction("Create");
+        }
+
+
+
+        //
+        // GET: /BookManager/Edit/5
+        public ActionResult Edit(int id)
+        {
+            return View();
+        }
+
+
+        //
+        // GET: /BookManager/Delete/5
+        public ActionResult Delete(int id)
+        {
+            return View();
+        }
+
+
+    }
+}
